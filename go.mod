@@ -1,4 +1,4 @@
-module github.com/dipakparmar/ddns-server
+module go.pkg.dipak.io/ddns-server
 
 go 1.18
 

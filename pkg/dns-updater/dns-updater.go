@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"strings"
 
-	dnsProviders "github.com/dipakparmar/ddns-server/pkg/dns-providers"
+	dnsProviders "go.pkg.dipak.io/ddns-server/pkg/dns-providers"
 )
 
 type Updater struct{}

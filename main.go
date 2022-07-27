@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	updater "github.com/dipakparmar/ddns-server/pkg/dns-updater"
+	updater "go.pkg.dipak.io/ddns-server/pkg/dns-updater"
 )
 
 var name string
