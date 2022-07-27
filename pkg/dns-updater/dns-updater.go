@@ -86,7 +86,7 @@ func UpdateDNSRecord(hostname string, ip string, TTL int64) error {
 	zoneId, err := dnsProviders.GetZoneId(c, hostname)
 
 	if ip_type == "ipv4" {
-
+		dnsProviders.UpdateRecord(c, hostname, ip, "A", TTL, zoneId)
 	} else if ip_type == "ipv6" {
 		dnsProviders.UpdateRecord(c, hostname, ip, "AAAA", TTL, zoneId)
 	} else {
