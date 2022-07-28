@@ -4,14 +4,8 @@ import (
 	"log"
 	"net/http"
 
-	updater "go.pkg.dipak.io/ddns-server/pkg/dns-updater"
+	updater "go.pkg.dipak.io/ddns-server/internal/dns-updater"
 )
-
-var name string
-var target string
-var TTL int64
-var weight = int64(1)
-var zoneId string = "" // update this manually
 
 func main() {
 	log.Println("Starting server at 127.0.0.1:80")
